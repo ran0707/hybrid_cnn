@@ -37,11 +37,17 @@ class CustomDBSRDataset(Dataset):
         return len(self.dataset)
 
     def __getitem__(self, idx):
-        image, label = self.dataset[idx]
-        image_tensor = transforms.ToTensor()(image)
-        enhanced_image_tensor = self.dbsr_model(image_tensor.unsqueeze(0)).squeeze(0)
+        image, label = self.dataset[idx]  # image is a PIL Image
         if self.augment:
-            enhanced_image_tensor = self.transform(enhanced_image_tensor)
+            image = self.transform(image)  # Apply augmentations to the original image
+
+        # Ensure the image has a batch dimension
+        image_tensor = image.unsqueeze(0)  # Add batch dimension
+        enhanced_image_tensor = self.dbsr_model(image_tensor)  # Apply DBSR model
+        
+        # Remove batch dimension before returning
+        enhanced_image_tensor = enhanced_image_tensor.squeeze(0)  # Remove batch dimension
+
         return enhanced_image_tensor, label
 
 def get_dataloaders(folder_path, batch_size=64, dbsr_blocks=4, augment=True, split_ratio=0.8, num_workers=4):
