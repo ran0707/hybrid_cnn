@@ -21,7 +21,7 @@ This package provides a custom Hybrid CNN model with residual blocks, Squeeze-an
     
 2. Navigate into the project directory:
     ```bash
-    cd your-repo-name
+    cd hybrid_cnn
     ```
     
 3. Install the package:
@@ -41,14 +41,14 @@ This package provides a custom Hybrid CNN model with residual blocks, Squeeze-an
 After installation, you can import the `HybridCNN` model, the `DBSR` model, and the `CustomDBSRDataset` class as follows:
 
 ```python
-from my_hybrid_cnn_package import HybridCNN, DBSR, CustomDBSRDataset
+from hybrid_cnn import HybridCNN, DBSR, CustomDBSRDataset
 ```
 
 ### 2. Example: Training the HybridCNN
 
 ```python
 import torch
-from my_hybrid_cnn_package import HybridCNN
+from hybrid_cnn import HybridCNN
 
 # Initialize the HybridCNN model for a classification task with 10 output classes
 model = HybridCNN(num_classes=10)
@@ -64,7 +64,7 @@ print(outputs.shape)  # Expected output: [8, 10]
 ### 3. Example: Using the DBSR Model and Custom Dataset
 
 ```python
-from my_hybrid_cnn_package import DBSR, CustomDBSRDataset, get_dataloaders
+from hybrid_cnn import DBSR, CustomDBSRDataset, get_dataloaders
 
 # Path to the dataset folder
 dataset_folder = 'path/to/your/dataset'
@@ -105,9 +105,6 @@ The package requires the following dependencies, which will be installed automat
 
 Ensure that these packages are available in your Python environment, especially if you switch between Python versions.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
@@ -115,6 +112,4 @@ Feel free to submit issues and pull requests if you have suggestions for improve
 
 ---
 
-### Next Steps:
-- Add the `README.md` file to your project directory.
-- Upload the code to GitHub (if not done already).
+
