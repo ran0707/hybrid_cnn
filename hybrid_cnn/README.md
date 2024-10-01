@@ -1,8 +1,6 @@
-Here's an example `README.md` file that you can use for your package, including usage instructions and installation procedures.
 
----
 
-# My Hybrid CNN Package
+# Hybrid CNN package
 
 This package provides a custom Hybrid CNN model with residual blocks, Squeeze-and-Excitation (SE) blocks for attention, and a DBSR (Deep Back-Projection Super-Resolution) model for image enhancement. It also includes a custom dataset loader that applies DBSR and data augmentation.
 
