@@ -14,7 +14,7 @@ This package provides a custom Hybrid CNN model with residual blocks, Squeeze-an
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/ran0707/hybrid_cnn.git
     ```
     
 2. Navigate into the project directory:
