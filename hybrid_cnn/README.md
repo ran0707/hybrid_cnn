@@ -1,6 +1,6 @@
 
 
-# Hybrid CNN package
+# HybridCNN package
 
 This package provides a custom Hybrid CNN model with residual blocks, Squeeze-and-Excitation (SE) blocks for attention, and a DBSR (Deep Back-Projection Super-Resolution) model for image enhancement. It also includes a custom dataset loader that applies DBSR and data augmentation.
 
