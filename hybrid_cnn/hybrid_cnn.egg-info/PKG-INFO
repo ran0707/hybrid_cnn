@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hybrid-cnn
+Version: 0.1
+Summary: A custom hybrid CNN with residual and SE blocks
+Home-page: https://https://github.com/ran0707/hybrid_cnn
+Author: Ranjithkumar
+Author-email: ranjithbca27@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
